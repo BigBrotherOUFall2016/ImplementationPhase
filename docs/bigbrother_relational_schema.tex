@@ -1,0 +1,21 @@
+\documentclass[12pt]{article}
+
+\usepackage{setspace} \usepackage[margin=1.0in]{geometry}
+\usepackage{hyperref} \hypersetup { pdfcreator={Ivan Guerra},
+  pdfproducer={Ivan Guerra}, pdftitle={BigBrother: Database Relational Schema}, pdfauthor={Ivan
+    Guerra}, pdfsubject={Software Engineering I}, }
+
+\begin{document}
+
+\title{BigBrother: Database Relational Schema} \author{Ivan
+  Guerra} \date{\today}
+\maketitle
+
+\noindent
+Employee(\underline{employee\_id}, name, type, email, wage)~\\
+Employee\_Hours(\underline{employee\_id}, \underline{hours\_id})~\\
+Hours(\underline{hours\_id}, date, week\_number, approved, billable, number\_of\_hours)~\\
+Works(\underline{employee\_id}, \underline{hours\_id})~\\
+Logs(\underline{employee\_id}, \underline{hours\_id})
+
+\end{document}
