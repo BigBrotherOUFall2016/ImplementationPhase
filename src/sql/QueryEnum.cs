@@ -18,7 +18,8 @@
             //Employee Logs hours 
             log_hours = "INSERT INTO Hours(hours_id, charge_date, week_number, approved, billable, number_of_hours) VALUES (@hours_id, @charge_date, @week_number, @approved, @billable, @hours)",
             prev_hours = "SELECT Hours.week_number, Hours.number_of_hours FROM Hours, Employee_Hours WHERE Employee_Hours.employee_id = @id",
-
+            pending = "SELECT * FROM Hours WHERE approved = 'unapproved'"
+            
             //Employee changes personal email
             change_email = "UPDATE TABLE Employee SET email = @email WHERE employee_id = @id",
 
