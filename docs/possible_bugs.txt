@@ -1,0 +1,7 @@
+Potential Bugs in the PirateKittyLand Application
+
+1) Click background in shoot out must make a different sound than when you hit a kitty.
+2) Background does not change in both games based on the timer.
+3) In treasure game, the number of chests is not random.
+4) Treasure game does not automatically go back to the home screen after a certain amount of time.
+5) The cat spawns in the shooting game are not random.
